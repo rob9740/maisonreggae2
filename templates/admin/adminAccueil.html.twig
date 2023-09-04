@@ -1,0 +1,19 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}ADMIN accueil{% endblock %}
+
+{% block body %}
+
+<h1 class="display-4 text-center m-5">ADMIN Maison du Reggae</h1>
+
+
+    <a href="{{ path('app_admin_trojan') }}" class="col-md-6 offset-md-3 mb-5 btn btn-info">ADMIN CD</a>
+    <a href="{{ path('app_accueil') }}" class="col-md-6 offset-md-3 mb-5 btn btn-info">Retour Accueil</a>
+    <a href="{{ path('app_accueil') }}" class="col-md-6 offset-md-3 mb-5 btn btn-info">Deconnexion</a>
+
+ 
+ 
+  
+
+
+{% endblock %}

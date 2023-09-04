@@ -1,0 +1,29 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}connexion BDD{% endblock %}
+
+{% block body %}
+
+
+    <h1 class="display-4 text-center py-3">Enregistrement</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-2 col-md-8  offset-2 py-5">
+
+                    {{ form_start(registrationForm) }}
+                        {{ form_row(registrationForm.email) }}
+                        {{ form_row(registrationForm.plainPassword, {
+                            label: 'Password'
+                        }) }}
+                        {{ form_row(registrationForm.agreeTerms) }}
+
+                     <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    {{ form_end(registrationForm) }}
+                </div>
+            </div>
+        </div>
+
+        <a href="{{ path('app_accueil') }}" button class="btn btn-primary">ACCUEIL</a>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+
+<h1 class="display-5 text-center py-3"> Accueil</h1>
+
+
+
+
+
+<div class="container">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ asset('img/coxsone1.jpeg') }}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>COXSONE</h2>
+                <p>Magasin du fameux producteur.</p>
+            </div>
+        </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/coxsone1.jpeg') }}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Second slide label</h2>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/wallpaperreggae.jpg') }}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Third slide label</h2>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div><!--- FIN CONTAINER -->
+
+<div class="wrapper">
+    <div class="box1">
+        <div class="m-2"><img src={{ asset ('img/Reggaebash371x525.jpg') }} width="200" height="300" alt="affiche soirée"></div>
+        <div>
+            <h3>LIVE</h3>
+                <p>Soirée a ne pas manqué, le 10 septembre à partir de 18h. Le reggae bash du mois, "Ganju Selector", Skankey Tunes et du special guest.</p>
+        </div>
+    </div><!-- FIN DIV 1 -->
+
+    <div class="box2">
+    <div><p>Bientôt arrivage des coffret trojan box set.</p></div>
+    <div class="text-center"><img src={{ asset ('img/boxset.jpeg') }}  alt="img box set"></div>
+    </div><!-- FIN DIV 2 -->
+
+    <div class="box3">
+        <div><img src={{ asset ('img/reggaebook1.jpg') }} alt="livre"></div>
+        <div><img src={{ asset ('img/reggaebook2.png') }} width="200" height="300" alt="livre"></div>
+    </div><!-- FIN DIV 3 -->
+
+    <div class="box4">
+        <div class="m-2"><img src={{ asset ('img/trojan_night1.jpg') }} width="300px" height="400px" alt="affiche soirée"></div>
+        <div>
+            <h3>CONCERT</h3>
+            <p>Le Batofar en ébullition, Londre à Paris</p>
+        </div>
+    </div><!-- FIN DIV 4 -->
+
+    <div class="box5">5 FRINGUE
+        <div><img src={{ asset ('img/tshirt.png') }} alt="photo t-shirt"></div>
+        <div><p>Bientôt sur le site</p></div>
+    </div><!-- FIN DIV5 -->
+
+    <div class="box6">6</div><!-- FIN DIV 6 -->
+
+</div>
+{% endblock %}
