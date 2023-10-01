@@ -40,6 +40,8 @@ body {
 
 h1 {color: darkgoldenrod;}
 
+
+
 /* ADMIN */
 
 li {
@@ -49,46 +51,16 @@ li {
 
 
 /* CAROUSEL */
-
-#carouselExampleCaptions {
-    height: 100%;
-    margin: auto;
-    
+.center{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-item img {
-    height: 100%;
-    height: auto;
-}
 
-/* card */
-.card-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2em;
-}
 
-/* GRID */
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 5px;
-    margin: 20px 10px;
-}
 
-.wrapper > div {
-    border: 1px solid black;
-    border-radius: 5px;
-}
 
-.box1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 3;
-}
 
-.box4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2 / 4;
-}
+

@@ -73,6 +73,8 @@ class AdminTrojanController extends AbstractController
         );
 
         return $this->redirectToRoute('app_admin_trojan');
+
+        
     }
     
     /**
