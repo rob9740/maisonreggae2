@@ -59,8 +59,21 @@ li {
 }
 
 
+/* TROJAN */
 
+.txttrojan{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:25px;
+    background-color: cadetblue;
+}
 
+.box1{
+    margin: 10px 50px 10px 50px;
+    border: 1px solid black;
+}
 
 
 
